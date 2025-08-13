@@ -1,0 +1,46 @@
+#currentNumber
+    {
+        display: block;
+        text-align: center;
+        font-size: 10em;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+#buttonsCtn
+    {
+        text-align: center;
+    }
+
+.buttonsClass
+    {
+        padding: 10px 20px;
+        font-size: 1.5em;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        background-color:rgb(146, 238, 238);                
+    }
+
+ .buttonsClass:hover
+    {
+        color: black;    
+        background-color:rgb(30, 195, 207); 
+    }   
+
+/*  Need to figure out selector nesting / conditionals
+#decrementBtn
+    {
+        background-color: red; 
+    }
+
+#incrementBtn
+    {
+        background-color: green;   
+    }
+*/
+
+  /*
+  Lessons LearnedL
+  1st. Just a reminder even though you rememebered this from a previous lesson but there is a heirarchy ID before class etc
+  2nd. you can apply a psuedo class like hover to a class to define a sytle give a condition
+  3rd. Need to look into a better way to perform child 
+  */

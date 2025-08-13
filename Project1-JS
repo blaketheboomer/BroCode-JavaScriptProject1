@@ -1,0 +1,35 @@
+
+
+currentNumber = 0
+
+document.getElementById("currentNumber").textContent = currentNumber
+
+
+// Decrement Button Conditional
+    document.getElementById("decrementBtn").onclick = function()
+        {
+            currentNumber --;
+            document.getElementById("currentNumber").textContent = currentNumber
+        }
+
+// Reset Button Conditional
+        document.getElementById("resetBtn").onclick = function()
+        {
+            currentNumber = 0;
+            document.getElementById("currentNumber").textContent = currentNumber
+        }
+
+// Increment Button Conditional
+        document.getElementById("incrementBtn").onclick = function()
+        {
+            currentNumber ++;
+            document.getElementById("currentNumber").textContent = currentNumber
+        }
+/*
+Lessons Learned:
+1st. The document object has two methods(think like a function) The first method is the getElementById method. This method grabs 
+... the element of the html document by its given ID AKA its goverment name. After this method is performed the element is returned
+.... to be passed into the next method onClick. This method acts opon the element button to create and event upon this event. This
+..... event is like a conditional whereas once the conditional is meet the funtion will execute.
+2nd. Make sure things are spelled and sourced correctly
+*/

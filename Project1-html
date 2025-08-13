@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale= 1">
+        <title>BroCode Project-1</title>
+        <link rel="stylesheet" href="Project1-CSS"> 
+    </head>
+
+    <body>
+        <label id="currentNumber"></label>
+            <div id="buttonsCtn">
+                <button id="decrementBtn" class="buttonsClass" >Decrement</button>
+                <button id="resetBtn" class="buttonsClass">Reset</button>
+                <button id="incrementBtn" class="buttonsClass" >Increment</button>
+            </div>
+        <script src="Project1-JS"></script>
+    </body>
+
+</html>
+
+
+
+
+<!-- Things learned as I was making this
+ 1. Elements in HTML that have no closing tag are called void elements
+ 2. The HTML tag serves a container for the document. This is the root element
+ 3. Script is placed at the end of the body as browsers load synchonsly, Also this messes up the DOM?
+ 4. The <meta> tag is a void element that provides metadata about the webpage
+    4.1 UTF 8 (Unicode Transformation Format 8 bit) is a standard format that extends acceptable characters past the standard ASCII
+    ... This is imporortant to ensure compliance with other webpages. See Wikipedia for further encoding info
+5. The name attribute is kinda like a global varible for meta? It acts like this name = "" calls the varible name and contents feeds
+... the value into name. So for something like viewport, we are saying the viewport is globally defined as  width=device-width, 
+...... intial-scale = 1
+6. link rel defines the relationship between the documents. Ex rel="stylesheet" lets the link element know that the following link 
+... should be treated like as style sheet
+
+-->
