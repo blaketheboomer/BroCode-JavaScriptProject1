@@ -1,30 +1,56 @@
 
+let currentNumber = 0;
 
-currentNumber = 0
+const decrementBtn = document.getElementById("decrementBtn");
+const incrementBtn = document.getElementById("incrementBtn");
+const resetBtn = document.getElementById("resetBtn");
+const currentNumberSign = document.getElementById("currentNumber");
 
-document.getElementById("currentNumber").textContent = currentNumber
+currentNumberSign.textContent = currentNumber
+
+decrementBtn.onclick = function()
+    {
+        currentNumber --;
+        currentNumberSign.textContent = currentNumber;
+    }
+incrementBtn.onclick = function()
+    {
+        currentNumber ++;
+        currentNumberSign.textContent = currentNumber;
+    }
+resetBtn.onclick = function()
+    {
+        currentNumber =0 ;
+        currentNumberSign.textContent = currentNumber ;   
+    }
 
 
-// Decrement Button Conditional
-    document.getElementById("decrementBtn").onclick = function()
-        {
-            currentNumber --;
-            document.getElementById("currentNumber").textContent = currentNumber
-        }
+        /* My Method, which is acceptable but the better way is above
+        currentNumber = 0
 
-// Reset Button Conditional
-        document.getElementById("resetBtn").onclick = function()
-        {
-            currentNumber = 0;
-            document.getElementById("currentNumber").textContent = currentNumber
-        }
+        document.getElementById("currentNumber").textContent = currentNumber
 
-// Increment Button Conditional
-        document.getElementById("incrementBtn").onclick = function()
-        {
-            currentNumber ++;
-            document.getElementById("currentNumber").textContent = currentNumber
-        }
+
+        // Decrement Button Conditional
+            document.getElementById("decrementBtn").onclick = function()
+                {
+                    currentNumber --;
+                    document.getElementById("currentNumber").textContent = currentNumber
+                }
+
+        // Reset Button Conditional
+                document.getElementById("resetBtn").onclick = function()
+                {
+                    currentNumber = 0;
+                    document.getElementById("currentNumber").textContent = currentNumber
+                }
+
+        // Increment Button Conditional
+                document.getElementById("incrementBtn").onclick = function()
+                {
+                    currentNumber ++;
+                    document.getElementById("currentNumber").textContent = currentNumber
+                } */
 /*
 Lessons Learned:
 1st. The document object has two methods(think like a function) The first method is the getElementById method. This method grabs 
@@ -32,4 +58,12 @@ Lessons Learned:
 .... to be passed into the next method onClick. This method acts opon the element button to create and event upon this event. This
 ..... event is like a conditional whereas once the conditional is meet the funtion will execute.
 2nd. Make sure things are spelled and sourced correctly
+-------------------------------------------------------------------------------------------
+After using brocodes method a couple things I observes
+1st. be careful with auto syntax, sometimes it is mid lol
+2nd. when assigning the const assign the target element and not the method/text value. This will not work if done in the wrong syntax
+... also brocodes methos is morescable/readable than mine was. So keep that in mind
+3rd. In the element you can set a default value IE 0 as the argument to currentNumber in the HTML fill and then override it with the
+... java script textContenet. I personally on using brocodes method did not do this as i still feel like it is more appropriate to definr
+....in the java script file.
 */
